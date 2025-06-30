@@ -110,12 +110,6 @@ const MatchInfo = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center items-center space-x-4 mb-6">
-            <div className="relative">
-              <Trophy className="w-12 h-12 text-yellow-400" />
-              <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
-            </div>
-          </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             FIFA World Cup 2030
           </h1>
