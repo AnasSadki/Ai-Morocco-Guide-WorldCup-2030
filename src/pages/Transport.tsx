@@ -47,7 +47,7 @@ const Transport = () => {
       price: '400-1000 MAD',
       features: ['Quick travel', 'Multiple daily flights', 'Business class', 'Baggage included'],
       color: 'from-red-500 to-red-600',
-      image: 'https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=800&h=400&fit=crop'
+      image: '/téléchargement (3).jpg'
     }
   ];
 
@@ -201,7 +201,7 @@ const Transport = () => {
                   className="h-48 bg-cover bg-center relative"
                   style={{ backgroundImage: `url(${option.image})` }}
                 >
-                  <div className="absolute inset-0 bg-black/40"></div>
+                  <div className="absolute inset-0 bg-black/30"></div>
                   <div className="absolute top-4 left-4">
                     <div className={`bg-gradient-to-r ${option.color} p-3 rounded-xl flex items-center space-x-2`}>
                       <option.icon className="w-6 h-6 text-white" />
