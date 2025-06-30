@@ -36,14 +36,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <h1 className="text-2xl font-bold bg-gradient-to-r from-red-600 via-blue-600 to-green-600 bg-clip-text text-transparent">
                   Morocco AI Guide
                 </h1>
-                <p className="text-sm text-gray-600">World Cup 2030 🦁</p>
+                <p className="text-sm text-gray-600">World Cup 2030</p>
               </div>
             </Link>
             
             <div className="flex items-center space-x-2">
               <div className="flex items-center space-x-1 bg-gray-100 rounded-full px-3 py-1">
                 <Globe className="w-4 h-4 text-gray-600" />
-                <span className="text-sm text-gray-700">🇲🇦 🇵🇹 🇪🇸</span>
+                <span className="text-sm text-gray-700">Morocco Portugal Spain</span>
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   className="w-10 h-10 bg-cover bg-center rounded-lg"
                   style={{ backgroundImage: `url('/download (1).jpeg')` }}
                 ></div>
-                <h3 className="text-lg font-semibold">Morocco AI Guide 🦁</h3>
+                <h3 className="text-lg font-semibold">Morocco AI Guide</h3>
               </div>
               <p className="text-gray-300 text-sm">
                 Your intelligent companion for FIFA World Cup 2030 in Morocco, Portugal, and Spain.
@@ -97,16 +97,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h3 className="text-lg font-semibold mb-4">Host Countries</h3>
               <div className="space-y-2">
                 <div className="flex items-center space-x-2">
-                  <span>🇲🇦</span>
-                  <span className="text-gray-300">Morocco</span>
+                  <span>Morocco</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span>🇵🇹</span>
-                  <span className="text-gray-300">Portugal</span>
+                  <span>Portugal</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <span>🇪🇸</span>
-                  <span className="text-gray-300">Spain</span>
+                  <span>Spain</span>
                 </div>
               </div>
             </div>
@@ -119,7 +116,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Morocco AI Guide 🦁. Built with ❤️ for World Cup 2030.
+              © 2024 Morocco AI Guide. Built with love for World Cup 2030.
             </p>
           </div>
         </div>
