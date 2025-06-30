@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Car, Train, Bus, Plane, MapPin, Clock, DollarSign, Route, Navigation, Crown } from 'lucide-react';
+import { Car, Train, Bus, Plane, MapPin, Clock, DollarSign, Route, Navigation, Crown, Ticket, MessageSquare, AlertCircle, Banknote, Languages, Shield } from 'lucide-react';
 
 const Transport = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -84,37 +84,37 @@ const Transport = () => {
     {
       title: 'Booking Train Tickets',
       description: 'Book online at ONCF website or mobile app for best prices',
-      icon: 'Ticket',
+      icon: Ticket,
       category: 'Planning'
     },
     {
       title: 'Taxi Negotiations',
       description: 'Always agree on price before starting journey in petit taxis',
-      icon: 'Chat',
+      icon: MessageSquare,
       category: 'Local Transport'
     },
     {
       title: 'Rush Hours',
       description: 'Avoid 7-9 AM and 5-7 PM in major cities',
-      icon: 'Clock',
+      icon: Clock,
       category: 'Timing'
     },
     {
       title: 'Currency',
       description: 'Keep small denominations (5, 10, 20 MAD) for transport',
-      icon: 'Money',
+      icon: Banknote,
       category: 'Money'
     },
     {
       title: 'Language',
       description: 'Learn basic phrases: "Fin?" (Where?), "Besh-hal?" (How much?)',
-      icon: 'Language',
+      icon: Languages,
       category: 'Communication'
     },
     {
       title: 'Safety',
       description: 'Use official taxis and keep valuables secure',
-      icon: 'Shield',
+      icon: Shield,
       category: 'Safety'
     }
   ];
@@ -312,7 +312,7 @@ const Transport = () => {
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center space-x-3 mb-3">
                   <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                    <span className="text-blue-600 font-bold text-sm">{tip.icon.charAt(0)}</span>
+                    <tip.icon className="w-4 h-4 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-900 flex items-center space-x-2">
