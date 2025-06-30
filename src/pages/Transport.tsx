@@ -129,12 +129,6 @@ const Transport = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center items-center space-x-4 mb-6">
-            <div className="relative">
-              <Car className="w-12 h-12 text-blue-400" />
-              <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
-            </div>
-          </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Transport Guide
           </h1>
@@ -150,7 +144,6 @@ const Transport = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-3">
             <Route className="w-6 h-6 text-blue-600" />
             <span>Quick Route Planner</span>
-            <Crown className="w-5 h-5 text-blue-600" />
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -212,7 +205,6 @@ const Transport = () => {
                   <div className="absolute top-4 left-4">
                     <div className={`bg-gradient-to-r ${option.color} p-3 rounded-xl flex items-center space-x-2`}>
                       <option.icon className="w-6 h-6 text-white" />
-                      <Crown className="w-4 h-4 text-white" />
                     </div>
                   </div>
                   <div className="absolute bottom-4 left-4 text-white">
@@ -234,10 +226,7 @@ const Transport = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center space-x-2">
-                      <span>Popular Routes:</span>
-                      <Crown className="w-4 h-4 text-blue-600" />
-                    </h4>
+                    <h4 className="font-semibold text-gray-900 mb-2">Popular Routes:</h4>
                     <div className="space-y-1">
                       {option.routes.map((route, i) => (
                         <div key={i} className="flex items-center space-x-2">
@@ -274,7 +263,6 @@ const Transport = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center space-x-2">
                   <MapPin className="w-5 h-5 text-blue-600" />
                   <span>{city.city}</span>
-                  <Crown className="w-4 h-4 text-blue-600" />
                 </h3>
                 
                 <div className="space-y-3">
@@ -297,9 +285,8 @@ const Transport = () => {
 
         {/* Transport Tips */}
         <div className="bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center flex items-center justify-center space-x-2">
-            <span>Smart Travel Tips</span>
-            <Crown className="w-6 h-6 text-blue-600" />
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Smart Travel Tips
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -310,10 +297,7 @@ const Transport = () => {
                     <tip.icon className="w-4 h-4 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900 flex items-center space-x-2">
-                      <span>{tip.title}</span>
-                      <Crown className="w-4 h-4 text-blue-600" />
-                    </h3>
+                    <h3 className="font-bold text-gray-900">{tip.title}</h3>
                     <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
                       {tip.category}
                     </span>
@@ -327,9 +311,8 @@ const Transport = () => {
 
         {/* Emergency Contacts */}
         <div className="mt-12 bg-red-50 border border-red-200 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-red-900 mb-4 flex items-center space-x-2">
-            <span>Emergency Transport Information</span>
-            <Crown className="w-5 h-5 text-red-600" />
+          <h2 className="text-2xl font-bold text-red-900 mb-4">
+            Emergency Transport Information
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
