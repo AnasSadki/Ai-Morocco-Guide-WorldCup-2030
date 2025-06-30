@@ -12,7 +12,7 @@ const AIAssistant = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 1,
-      text: "مرحبا! أهلاً وسهلاً! Welcome to Morocco! 🦁 I'm your AI travel assistant for the World Cup 2030. I can help you with anything about Morocco, Portugal, Spain, and your World Cup experience. How can I assist you today?",
+      text: "Welcome to Morocco! I'm your AI travel assistant for the World Cup 2030. I can help you with anything about Morocco, Portugal, Spain, and your World Cup experience. How can I assist you today?",
       sender: 'assistant',
       timestamp: new Date()
     }
@@ -48,11 +48,11 @@ const AIAssistant = () => {
     // Simulate AI response
     setTimeout(() => {
       const responses = [
-        "Great question! 🦁 For travel between Casablanca and Marrakech, I recommend the train - it's comfortable, affordable (around 100 MAD), and takes about 3 hours. The Al Boraq high-speed train doesn't cover this route yet, but the regular ONCF trains are reliable and scenic. Would you like specific departure times?",
-        "Morocco offers incredible cuisine! 🦁 Must-try dishes include Tagine (slow-cooked stew), Couscous (national dish, traditionally served Fridays), Pastilla (sweet-savory pastry), and Harira soup. For street food, try Msemen (flaky pancakes) and fresh mint tea. Each region has specialties - what type of food interests you most?",
-        "Official World Cup 2030 tickets will be available through FIFA's official website closer to the tournament. 🦁 Be cautious of unofficial sellers. Tickets typically go on sale about 18 months before the tournament. I'll keep you updated on official announcements. Are you interested in specific matches?",
-        "June 2030 in Morocco will be warm but pleasant in most cities. 🦁 Expect 25-30°C (77-86°F) in coastal areas like Casablanca and Rabat, and hotter inland (30-35°C/86-95°F in Marrakech). Pack light, breathable clothing, sunscreen, and a hat. Perfect weather for the World Cup!",
-        "In Arabic: 'Shukran' (شكراً) means 'thank you'. 🦁 In Moroccan Darija: 'Baraka Allahu fik' (for men) or 'Baraka Allahu fiki' (for women) means 'may God bless you' and is commonly used. You can also say 'Merci' as French is widely understood. Moroccans appreciate when visitors try local phrases!"
+        "Great question! For travel between Casablanca and Marrakech, I recommend the train - it's comfortable, affordable (around 100 MAD), and takes about 3 hours. The Al Boraq high-speed train doesn't cover this route yet, but the regular ONCF trains are reliable and scenic. Would you like specific departure times?",
+        "Morocco offers incredible cuisine! Must-try dishes include Tagine (slow-cooked stew), Couscous (national dish, traditionally served Fridays), Pastilla (sweet-savory pastry), and Harira soup. For street food, try Msemen (flaky pancakes) and fresh mint tea. Each region has specialties - what type of food interests you most?",
+        "Official World Cup 2030 tickets will be available through FIFA's official website closer to the tournament. Be cautious of unofficial sellers. Tickets typically go on sale about 18 months before the tournament. I'll keep you updated on official announcements. Are you interested in specific matches?",
+        "June 2030 in Morocco will be warm but pleasant in most cities. Expect 25-30°C (77-86°F) in coastal areas like Casablanca and Rabat, and hotter inland (30-35°C/86-95°F in Marrakech). Pack light, breathable clothing, sunscreen, and a hat. Perfect weather for the World Cup!",
+        "In Arabic: 'Shukran' means 'thank you'. In Moroccan Darija: 'Baraka Allahu fik' (for men) or 'Baraka Allahu fiki' (for women) means 'may God bless you' and is commonly used. You can also say 'Merci' as French is widely understood. Moroccans appreciate when visitors try local phrases!"
       ];
       
       const randomResponse = responses[Math.floor(Math.random() * responses.length)];
@@ -88,15 +88,8 @@ const AIAssistant = () => {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center items-center space-x-4 mb-6">
-            <div className="relative">
-              <Bot className="w-12 h-12 text-purple-400" />
-              <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
-            </div>
-            <div className="text-3xl">🤖 💬 🧠</div>
-          </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            AI Assistant 🦁
+            AI Assistant
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Chat with your intelligent Morocco guide - available 24/7 in multiple languages
@@ -117,7 +110,7 @@ const AIAssistant = () => {
                     <Crown className="w-4 h-4 text-yellow-400 absolute -top-1 -right-1" />
                   </div>
                   <div>
-                    <h2 className="text-lg font-semibold text-white">Morocco AI Guide 🦁</h2>
+                    <h2 className="text-lg font-semibold text-white">Morocco AI Guide</h2>
                     <div className="flex items-center space-x-2 text-white/80">
                       <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                       <span className="text-sm">Online & Ready to Help</span>
@@ -125,7 +118,7 @@ const AIAssistant = () => {
                   </div>
                   <div className="ml-auto flex items-center space-x-2">
                     <Globe className="w-5 h-5 text-white/80" />
-                    <span className="text-sm text-white/80">🇲🇦 🇵🇹 🇪🇸</span>
+                    <span className="text-sm text-white/80">Morocco Portugal Spain</span>
                   </div>
                 </div>
               </div>
@@ -194,7 +187,7 @@ const AIAssistant = () => {
                     type="text"
                     value={inputText}
                     onChange={(e) => setInputText(e.target.value)}
-                    placeholder="Ask me anything about Morocco, World Cup 2030, or travel tips... 🦁"
+                    placeholder="Ask me anything about Morocco, World Cup 2030, or travel tips..."
                     className="flex-1 p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent"
                     disabled={isTyping}
                   />
@@ -217,7 +210,7 @@ const AIAssistant = () => {
             <div className="bg-white rounded-2xl shadow-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
                 <Lightbulb className="w-5 h-5 text-yellow-500" />
-                <span>Quick Questions 🦁</span>
+                <span>Quick Questions</span>
                 <Crown className="w-4 h-4 text-purple-600" />
               </h3>
               
@@ -238,18 +231,18 @@ const AIAssistant = () => {
             {/* Features */}
             <div className="bg-gradient-to-br from-purple-100 to-blue-100 rounded-2xl p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-                <span>AI Features 🦁</span>
+                <span>AI Features</span>
                 <Crown className="w-4 h-4 text-purple-600" />
               </h3>
               
               <div className="space-y-3">
                 {[
-                  { icon: '🌍', text: 'Multilingual Support' },
-                  { icon: '🕌', text: 'Cultural Knowledge' },
-                  { icon: '⚽', text: 'World Cup Expert' },
-                  { icon: '🗺️', text: 'Local Insights' },
-                  { icon: '🍽️', text: 'Food Recommendations' },
-                  { icon: '🚗', text: 'Transport Help' }
+                  { icon: 'World', text: 'Multilingual Support' },
+                  { icon: 'Mosque', text: 'Cultural Knowledge' },
+                  { icon: 'Soccer', text: 'World Cup Expert' },
+                  { icon: 'Map', text: 'Local Insights' },
+                  { icon: 'Food', text: 'Food Recommendations' },
+                  { icon: 'Car', text: 'Transport Help' }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <span className="text-xl">{feature.icon}</span>
@@ -262,16 +255,16 @@ const AIAssistant = () => {
             {/* Languages */}
             <div className="bg-white rounded-2xl shadow-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center space-x-2">
-                <span>Available Languages 🦁</span>
+                <span>Available Languages</span>
                 <Crown className="w-4 h-4 text-purple-600" />
               </h3>
               
               <div className="grid grid-cols-2 gap-2">
                 {[
-                  { flag: '🇺🇸', lang: 'English' },
-                  { flag: '🇫🇷', lang: 'Français' },
-                  { flag: '🇸🇦', lang: 'العربية' },
-                  { flag: '🇲🇦', lang: 'Darija' }
+                  { flag: 'US', lang: 'English' },
+                  { flag: 'FR', lang: 'Français' },
+                  { flag: 'SA', lang: 'العربية' },
+                  { flag: 'MA', lang: 'Darija' }
                 ].map((language, index) => (
                   <div key={index} className="flex items-center space-x-2 p-2 bg-gray-50 rounded-lg">
                     <span className="text-lg">{language.flag}</span>
@@ -286,7 +279,7 @@ const AIAssistant = () => {
         {/* AI Capabilities */}
         <div className="mt-12 bg-white rounded-2xl shadow-lg p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center flex items-center justify-center space-x-2">
-            <span>What I Can Help You With 🦁</span>
+            <span>What I Can Help You With</span>
             <Crown className="w-6 h-6 text-purple-600" />
           </h2>
           
