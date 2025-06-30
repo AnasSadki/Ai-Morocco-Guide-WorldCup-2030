@@ -7,27 +7,43 @@ const FoodCulture = () => {
   const dishes = [
     {
       name: 'Tagine',
-      description: 'Traditional slow-cooked stew named after the earthenware pot it\'s cooked in',
-      image: 'https://images.pexels.com/photos/6419547/pexels-photo-6419547.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      description: 'The Arabic طاجين (ṭajīn) is derived from Ancient Greek τάγηνον (tágēnon) \'frying-pan, saucepan\'. According to some sources, the origin of the word \'tagine\' is Persian, pronounced Tahchin.',
+      image: '/téléchargement (2).jpg',
       difficulty: 'Traditional',
       time: '2-3 hours',
       ingredients: ['Lamb or chicken', 'Vegetables', 'Preserved lemons', 'Olives', 'Spices']
     },
     {
+      name: 'Rfissa',
+      description: 'Rfissa (Arabic: رفيسة) is a Moroccan dish that is served during various traditional celebrations. It traditionally includes chicken, lentils, fenugreek seeds (helba in Arabic), msemmen, meloui or day-old bread, and the spice blend ras el-hanout.',
+      image: '/téléchargement (1).jpg',
+      difficulty: 'Celebratory',
+      time: '2-3 hours',
+      ingredients: ['Chicken', 'Lentils', 'Fenugreek seeds', 'Msemmen bread', 'Ras el-hanout']
+    },
+    {
       name: 'Couscous',
-      description: 'The national dish of Morocco, traditionally served on Fridays',
-      image: 'https://images.pexels.com/photos/5949892/pexels-photo-5949892.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      description: 'Couscous (Arabic: كُسْكُس, romanized: kuskus) is a traditional North African dish of small steamed granules of rolled semolina that is often served with a stew spooned on top. The national dish of Morocco, traditionally served on Fridays.',
+      image: '/téléchargement.jpg',
       difficulty: 'Essential',
       time: '1-2 hours',
       ingredients: ['Semolina grains', 'Seven vegetables', 'Meat or chicken', 'Rich broth']
     },
     {
+      name: 'Méchoui',
+      description: 'Le méchoui est un mets culinaire d\'Afrique du Nord composé le plus souvent d\'un mouton ou d\'un agneau entier rôti à la broche, sur les braises d\'un feu de bois. Le mot vient du verbe arabe « šawa » (chawa) qui signifie « griller », « rôtir ».',
+      image: '/téléchargement (6).jpg',
+      difficulty: 'Festive',
+      time: '4-6 hours',
+      ingredients: ['Whole lamb or sheep', 'Wood fire', 'Traditional spices', 'Salt', 'Aromatic herbs']
+    },
+    {
       name: 'Pastilla',
-      description: 'Sweet and savory pastry traditionally made with pigeon, now often with chicken',
-      image: 'https://images.pexels.com/photos/8679638/pexels-photo-8679638.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
+      description: 'Pastilla (Arabic: بسطيلة, romanized: basṭīla, also called North African pie) is a meat or seafood pie in Maghrebi cuisine made with warqa dough (ورقة), which is similar to filo. It is a specialty of Morocco, Algeria, and Tunisia.',
+      image: '/images.webp',
       difficulty: 'Special Occasion',
       time: '3-4 hours',
-      ingredients: ['Warqa pastry', 'Chicken', 'Almonds', 'Eggs', 'Cinnamon', 'Sugar']
+      ingredients: ['Warqa pastry', 'Chicken or pigeon', 'Almonds', 'Eggs', 'Cinnamon', 'Sugar']
     },
     {
       name: 'Harira',
@@ -187,7 +203,7 @@ const FoodCulture = () => {
                   
                   <div className="p-6">
                     <h3 className="text-2xl font-bold text-gray-900 mb-3">{dish.name}</h3>
-                    <p className="text-gray-600 mb-4">{dish.description}</p>
+                    <p className="text-gray-600 mb-4 leading-relaxed">{dish.description}</p>
                     
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="flex items-center space-x-2 text-gray-500">
