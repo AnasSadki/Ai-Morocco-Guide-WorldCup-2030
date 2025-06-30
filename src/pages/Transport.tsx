@@ -134,11 +134,6 @@ const Transport = () => {
               <Car className="w-12 h-12 text-blue-400" />
               <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
             </div>
-            <div className="flex space-x-2">
-              <Train className="w-8 h-8 text-blue-400" />
-              <Bus className="w-8 h-8 text-green-400" />
-              <Plane className="w-8 h-8 text-red-400" />
-            </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Transport Guide
