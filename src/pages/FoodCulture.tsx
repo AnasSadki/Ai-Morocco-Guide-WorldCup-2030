@@ -6,7 +6,11 @@ const FoodCulture = () => {
     '/Wᴇᴀʟᴛʜ ᴏғ Mᴏʀᴏᴄᴄᴏ (@WealthofMorocco) on X (1).jpg',
     '/Moroccan Chicken Tagine.jpg',
     '/Tanjia marrakchia 🇲🇦.jpg',
-    '/Eat delicious l7m b br9o9 lham b barkok Moroccan wedding Moroccan food djaj mhamar chikren meat Morocco Moroccan culture Moroccan kitchen cuisine maroc.jpg'
+    '/Eat delicious l7m b br9o9 lham b barkok Moroccan wedding Moroccan food djaj mhamar chikren meat Morocco Moroccan culture Moroccan kitchen cuisine maroc.jpg',
+    '/files_5636413-1751293467039-téléchargement (8).jpg',
+    '/files_5636413-1751293438858-𝐌𝐨𝐫𝐨𝐜𝐜𝐚𝐧 𝐬𝐰𝐞𝐞𝐭•🇲🇦.jpg',
+    '/files_5636413-1751293445781-Sellou _ Kookmutsjes.jpg',
+    '/files_5636413-1751293450873-Wᴇᴀʟᴛʜ ᴏғ Mᴏʀᴏᴄᴄᴏ (@WealthofMorocco) on X.jpg'
   ];
 
   return (
