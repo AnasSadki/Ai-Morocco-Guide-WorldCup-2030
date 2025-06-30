@@ -1,64 +1,56 @@
 import React, { useState } from 'react';
-import { UtensilsCrossed, Heart, MapPin, Star, Clock, Lightbulb, Crown } from 'lucide-react';
+import { UtensilsCrossed, Heart, MapPin, Star, Clock, Lightbulb } from 'lucide-react';
 
 const FoodCulture = () => {
   const [activeCategory, setActiveCategory] = useState('dishes');
 
   const dishes = [
     {
-      name: 'Tagine',
-      description: 'The Arabic طاجين (ṭajīn) is derived from Ancient Greek τάγηνον (tágēnon) \'frying-pan, saucepan\'. According to some sources, the origin of the word \'tagine\' is Persian, pronounced Tahchin.',
-      image: '/téléchargement (2).jpg',
+      name: 'Traditional Couscous',
+      description: 'A beautifully presented traditional couscous dish with almonds, raisins, and aromatic spices. This ceremonial presentation showcases the artistry of Moroccan cuisine.',
+      image: '/Moroccan Recipes ebook available 👍👌.jpg',
       difficulty: 'Traditional',
       time: '2-3 hours',
-      ingredients: ['Lamb or chicken', 'Vegetables', 'Preserved lemons', 'Olives', 'Spices']
+      ingredients: ['Semolina couscous', 'Almonds', 'Raisins', 'Cinnamon', 'Powdered sugar', 'Traditional spices']
     },
     {
-      name: 'Rfissa',
-      description: 'Rfissa (Arabic: رفيسة) is a Moroccan dish that is served during various traditional celebrations. It traditionally includes chicken, lentils, fenugreek seeds (helba in Arabic), msemmen, meloui or day-old bread, and the spice blend ras el-hanout.',
-      image: '/téléchargement (1).jpg',
-      difficulty: 'Celebratory',
+      name: 'Moroccan Tagine',
+      description: 'An authentic tagine featuring tender chicken with preserved lemons, olives, and vegetables. Slow-cooked to perfection in the traditional clay vessel.',
+      image: '/téléchargement (10).jpg',
+      difficulty: 'Classic',
       time: '2-3 hours',
-      ingredients: ['Chicken', 'Lentils', 'Fenugreek seeds', 'Msemmen bread', 'Ras el-hanout']
+      ingredients: ['Chicken', 'Preserved lemons', 'Green olives', 'Carrots', 'Potatoes', 'Moroccan spices']
     },
     {
-      name: 'Couscous',
-      description: 'Couscous (Arabic: كُسْكُس, romanized: kuskus) is a traditional North African dish of small steamed granules of rolled semolina that is often served with a stew spooned on top. The national dish of Morocco, traditionally served on Fridays.',
-      image: '/téléchargement.jpg',
-      difficulty: 'Essential',
-      time: '1-2 hours',
-      ingredients: ['Semolina grains', 'Seven vegetables', 'Meat or chicken', 'Rich broth']
-    },
-    {
-      name: 'Méchoui',
-      description: 'Le méchoui est un mets culinaire d\'Afrique du Nord composé le plus souvent d\'un mouton ou d\'un agneau entier rôti à la broche, sur les braises d\'un feu de bois. Le mot vient du verbe arabe « šawa » (chawa) qui signifie « griller », « rôtir ».',
-      image: '/téléchargement (6).jpg',
+      name: 'Chebakia',
+      description: 'Traditional Moroccan sesame cookies, beautifully shaped and fried to golden perfection. Often enjoyed during Ramadan with mint tea.',
+      image: '/Wᴇᴀʟᴛʜ ᴏғ Mᴏʀᴏᴄᴄᴏ (@WealthofMorocco) on X (1).jpg',
       difficulty: 'Festive',
-      time: '4-6 hours',
-      ingredients: ['Whole lamb or sheep', 'Wood fire', 'Traditional spices', 'Salt', 'Aromatic herbs']
-    },
-    {
-      name: 'Pastilla',
-      description: 'Pastilla (Arabic: بسطيلة, romanized: basṭīla, also called North African pie) is a meat or seafood pie in Maghrebi cuisine made with warqa dough (ورقة), which is similar to filo. It is a specialty of Morocco, Algeria, and Tunisia.',
-      image: '/images.webp',
-      difficulty: 'Special Occasion',
       time: '3-4 hours',
-      ingredients: ['Warqa pastry', 'Chicken or pigeon', 'Almonds', 'Eggs', 'Cinnamon', 'Sugar']
+      ingredients: ['Flour', 'Sesame seeds', 'Anise', 'Orange blossom water', 'Honey', 'Oil for frying']
     },
     {
-      name: 'Harira',
-      description: 'Hearty soup traditionally eaten to break the fast during Ramadan',
-      image: 'https://images.pexels.com/photos/8992557/pexels-photo-8992557.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop',
-      difficulty: 'Comfort Food',
-      time: '45 minutes',
-      ingredients: ['Tomatoes', 'Lentils', 'Chickpeas', 'Lamb', 'Fresh herbs', 'Spices']
+      name: 'Kataif Pastry',
+      description: 'Delicate shredded pastry served with honey, showcasing the fine art of Moroccan pastry making. A sweet treat perfect for special occasions.',
+      image: '/81 Traditional Christmas Foods To Feast On.jpg',
+      difficulty: 'Artisanal',
+      time: '2-3 hours',
+      ingredients: ['Kataif dough', 'Honey', 'Nuts', 'Rose water', 'Butter', 'Cinnamon']
+    },
+    {
+      name: 'Warqa Pastry Rolls',
+      description: 'Expertly crafted warqa pastry rolls, demonstrating the skill required in traditional Moroccan pastry preparation. Light, crispy, and delicious.',
+      image: '/Wᴇᴀʟᴛʜ ᴏғ Mᴏʀᴏᴄᴄᴏ (@WealthofMorocco) on X.jpg',
+      difficulty: 'Expert Level',
+      time: '4-5 hours',
+      ingredients: ['Warqa pastry', 'Almonds', 'Sugar', 'Orange blossom water', 'Butter', 'Eggs']
     }
   ];
 
   const traditions = [
     {
       title: 'Tea Culture',
-      description: 'Moroccan mint tea (Atay) is a symbol of hospitality and friendship',
+      description: 'Moroccan mint tea is a symbol of hospitality and friendship',
       icon: '🫖',
       details: [
         'Always served in small glasses',
@@ -86,7 +78,7 @@ const FoodCulture = () => {
         'Dress modestly when visiting mosques',
         'Remove shoes before entering',
         'Ramadan affects restaurant hours',
-        'Friday prayers are important (Jumu\'ah)'
+        'Friday prayers are important'
       ]
     },
     {
@@ -135,19 +127,15 @@ const FoodCulture = () => {
       <section 
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/A Moroccan Feast Awaits_ Journey Through Authentic Flavors at Bab Al Qasr Hotel\'s Artisan Kitchen.jpeg')`
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/Moroccan Recipes ebook available 👍👌.jpg')`
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex justify-center items-center space-x-4 mb-6">
-            <div className="relative">
-              <UtensilsCrossed className="w-12 h-12 text-orange-400" />
-              <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
-            </div>
-            <div className="text-3xl">🇲🇦 🍽️ 🫖</div>
+            <UtensilsCrossed className="w-12 h-12 text-orange-400" />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Food & Culture 🦁
+            Food & Culture
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Experience the rich flavors and traditions of Morocco, from authentic cuisine to cultural heritage
@@ -160,7 +148,7 @@ const FoodCulture = () => {
         <div className="bg-white rounded-2xl shadow-lg p-2 mb-8">
           <div className="flex flex-wrap gap-2">
             {[
-              { id: 'dishes', label: 'Traditional Dishes 🦁', icon: UtensilsCrossed },
+              { id: 'dishes', label: 'Traditional Dishes', icon: UtensilsCrossed },
               { id: 'culture', label: 'Cultural Traditions', icon: Heart },
               { id: 'restaurants', label: 'Recommended Places', icon: MapPin }
             ].map(({ id, label, icon: Icon }) => (
@@ -183,7 +171,7 @@ const FoodCulture = () => {
         {/* Traditional Dishes */}
         {activeCategory === 'dishes' && (
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Must-Try Moroccan Dishes 🦁</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Authentic Moroccan Cuisine</h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {dishes.map((dish, index) => (
@@ -192,10 +180,9 @@ const FoodCulture = () => {
                     className="h-64 bg-cover bg-center relative"
                     style={{ backgroundImage: `url(${dish.image})` }}
                   >
-                    <div className="absolute inset-0 bg-black/30"></div>
+                    <div className="absolute inset-0 bg-black/20"></div>
                     <div className="absolute top-4 right-4">
-                      <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center space-x-2">
-                        <Crown className="w-4 h-4 text-orange-600" />
+                      <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                         <span className="text-sm font-medium text-gray-800">{dish.difficulty}</span>
                       </div>
                     </div>
@@ -232,7 +219,7 @@ const FoodCulture = () => {
         {/* Cultural Traditions */}
         {activeCategory === 'culture' && (
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Cultural Traditions & Etiquette 🦁</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Cultural Traditions & Etiquette</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {traditions.map((tradition, index) => (
@@ -240,9 +227,8 @@ const FoodCulture = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="text-4xl">{tradition.icon}</div>
                     <div>
-                      <h3 className="text-xl font-bold text-gray-900 flex items-center space-x-2">
-                        <span>{tradition.title}</span>
-                        <Crown className="w-5 h-5 text-orange-600" />
+                      <h3 className="text-xl font-bold text-gray-900">
+                        {tradition.title}
                       </h3>
                       <p className="text-gray-600">{tradition.description}</p>
                     </div>
@@ -265,7 +251,7 @@ const FoodCulture = () => {
         {/* Recommended Restaurants */}
         {activeCategory === 'restaurants' && (
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Recommended Dining Experiences 🦁</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Recommended Dining Experiences</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {restaurants.map((restaurant, index) => (
@@ -283,8 +269,7 @@ const FoodCulture = () => {
                       </div>
                     </div>
                     <div className="absolute top-4 right-4">
-                      <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full flex items-center space-x-2">
-                        <Crown className="w-4 h-4 text-orange-600" />
+                      <div className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                         <span className="text-sm font-medium text-gray-800">{restaurant.type}</span>
                       </div>
                     </div>
@@ -306,7 +291,7 @@ const FoodCulture = () => {
 
         {/* Cultural Tips */}
         <div className="mt-16 bg-gradient-to-br from-orange-100 to-red-100 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Quick Cultural Tips for World Cup Visitors 🦁</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Quick Cultural Tips for World Cup Visitors</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
@@ -344,10 +329,7 @@ const FoodCulture = () => {
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg">
                 <div className="flex items-center space-x-3 mb-3">
                   <span className="text-2xl">{item.icon}</span>
-                  <h3 className="font-bold text-gray-900 flex items-center space-x-2">
-                    <span>{item.title}</span>
-                    <Crown className="w-4 h-4 text-orange-600" />
-                  </h3>
+                  <h3 className="font-bold text-gray-900">{item.title}</h3>
                 </div>
                 <p className="text-gray-700">{item.tip}</p>
               </div>
