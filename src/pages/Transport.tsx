@@ -14,7 +14,7 @@ const Transport = () => {
       price: '100-200 MAD',
       features: ['Air-conditioned', 'WiFi', 'Food service', '320 km/h speed'],
       color: 'from-blue-500 to-blue-600',
-      image: '/Riding Morocco\'s Al Boraq Bullet Train copy.jpg'
+      image: '/Riding Morocco\'s Al Boraq Bullet Train.jpg'
     },
     {
       type: 'Regular Train',
@@ -201,7 +201,7 @@ const Transport = () => {
                   className="h-48 bg-cover bg-center relative"
                   style={{ backgroundImage: `url(${option.image})` }}
                 >
-                  <div className="absolute inset-0 bg-black/20"></div>
+                  <div className="absolute inset-0 bg-black/40"></div>
                   <div className="absolute top-4 left-4">
                     <div className={`bg-gradient-to-r ${option.color} p-3 rounded-xl flex items-center space-x-2`}>
                       <option.icon className="w-6 h-6 text-white" />
