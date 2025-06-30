@@ -40,6 +40,11 @@ const FoodCulture = () => {
                   <h3 className="text-lg font-semibold text-gray-900 text-center">Msemen</h3>
                 </div>
               )}
+              {index === 2 && (
+                <div className="p-4 bg-white">
+                  <h3 className="text-lg font-semibold text-gray-900 text-center">Chicken Tagine</h3>
+                </div>
+              )}
             </div>
           ))}
         </div>
