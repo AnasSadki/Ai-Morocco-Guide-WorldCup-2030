@@ -115,10 +115,9 @@ const MatchInfo = () => {
               <Trophy className="w-12 h-12 text-yellow-400" />
               <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
             </div>
-            <div className="text-3xl">🇲🇦 ⚽ 🇵🇹 🇪🇸</div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            FIFA World Cup 2030 🦁
+            FIFA World Cup 2030
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Stay updated with match schedules, venues, and tournament information across Morocco, Portugal, and Spain
@@ -131,7 +130,7 @@ const MatchInfo = () => {
         <div className="bg-white rounded-2xl shadow-lg p-6 mb-8">
           <div className="flex items-center space-x-4 mb-4">
             <Filter className="w-5 h-5 text-gray-600" />
-            <h2 className="text-xl font-semibold text-gray-900">Filter Matches 🦁</h2>
+            <h2 className="text-xl font-semibold text-gray-900">Filter Matches</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -143,9 +142,9 @@ const MatchInfo = () => {
                 className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent"
               >
                 <option value="all">All Countries</option>
-                <option value="Morocco">🇲🇦 Morocco</option>
-                <option value="Portugal">🇵🇹 Portugal</option>
-                <option value="Spain">🇪🇸 Spain</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Spain">Spain</option>
               </select>
             </div>
             
@@ -169,7 +168,7 @@ const MatchInfo = () => {
 
         {/* Match Cards */}
         <div className="space-y-6 mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Upcoming Matches 🦁</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Upcoming Matches</h2>
           
           {filteredMatches.map((match) => (
             <div key={match.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
@@ -226,7 +225,7 @@ const MatchInfo = () => {
                     
                     <button className="bg-gradient-to-r from-red-600 to-green-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center space-x-2 mx-auto lg:ml-auto lg:mr-0">
                       <Ticket className="w-4 h-4" />
-                      <span>Get Tickets 🦁</span>
+                      <span>Get Tickets</span>
                     </button>
                   </div>
                 </div>
@@ -237,7 +236,7 @@ const MatchInfo = () => {
 
         {/* Stadiums Section */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Iconic Stadiums 🦁</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Iconic Stadiums</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stadiums.map((stadium, index) => (
