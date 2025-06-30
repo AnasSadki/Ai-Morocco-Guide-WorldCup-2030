@@ -84,37 +84,37 @@ const Transport = () => {
     {
       title: 'Booking Train Tickets',
       description: 'Book online at ONCF website or mobile app for best prices',
-      icon: '🎫',
+      icon: 'Ticket',
       category: 'Planning'
     },
     {
       title: 'Taxi Negotiations',
       description: 'Always agree on price before starting journey in petit taxis',
-      icon: '💬',
+      icon: 'Chat',
       category: 'Local Transport'
     },
     {
       title: 'Rush Hours',
       description: 'Avoid 7-9 AM and 5-7 PM in major cities',
-      icon: '⏰',
+      icon: 'Clock',
       category: 'Timing'
     },
     {
       title: 'Currency',
       description: 'Keep small denominations (5, 10, 20 MAD) for transport',
-      icon: '💰',
+      icon: 'Money',
       category: 'Money'
     },
     {
       title: 'Language',
       description: 'Learn basic phrases: "Fin?" (Where?), "Besh-hal?" (How much?)',
-      icon: '🗣️',
+      icon: 'Language',
       category: 'Communication'
     },
     {
       title: 'Safety',
       description: 'Use official taxis and keep valuables secure',
-      icon: '🛡️',
+      icon: 'Shield',
       category: 'Safety'
     }
   ];
@@ -134,10 +134,14 @@ const Transport = () => {
               <Car className="w-12 h-12 text-blue-400" />
               <Crown className="w-6 h-6 text-red-500 absolute -top-2 -right-2" />
             </div>
-            <div className="text-3xl">🚂 🚍 ✈️</div>
+            <div className="flex space-x-2">
+              <Train className="w-8 h-8 text-blue-400" />
+              <Bus className="w-8 h-8 text-green-400" />
+              <Plane className="w-8 h-8 text-red-400" />
+            </div>
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Transport Guide 🦁
+            Transport Guide
           </h1>
           <p className="text-xl text-gray-200 max-w-3xl mx-auto">
             Navigate Morocco with ease using our comprehensive transport guide for World Cup 2030
@@ -150,7 +154,7 @@ const Transport = () => {
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-12">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center space-x-3">
             <Route className="w-6 h-6 text-blue-600" />
-            <span>Quick Route Planner 🦁</span>
+            <span>Quick Route Planner</span>
             <Crown className="w-5 h-5 text-blue-600" />
           </h2>
           
@@ -194,13 +198,13 @@ const Transport = () => {
           
           <button className="mt-6 bg-gradient-to-r from-blue-600 to-green-600 text-white px-8 py-3 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center space-x-2">
             <Navigation className="w-5 h-5" />
-            <span>Find Best Routes 🦁</span>
+            <span>Find Best Routes</span>
           </button>
         </div>
 
         {/* Transport Options */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">Intercity Transport Options 🦁</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">Intercity Transport Options</h2>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {transportOptions.map((option, index) => (
@@ -267,7 +271,7 @@ const Transport = () => {
 
         {/* City Transport */}
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">City Transport Options 🦁</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">City Transport Options</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cityTransport.map((city, index) => (
@@ -299,7 +303,7 @@ const Transport = () => {
         {/* Transport Tips */}
         <div className="bg-gradient-to-br from-blue-100 to-green-100 rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center flex items-center justify-center space-x-2">
-            <span>Smart Travel Tips 🦁</span>
+            <span>Smart Travel Tips</span>
             <Crown className="w-6 h-6 text-blue-600" />
           </h2>
           
@@ -307,7 +311,9 @@ const Transport = () => {
             {tips.map((tip, index) => (
               <div key={index} className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center space-x-3 mb-3">
-                  <span className="text-2xl">{tip.icon}</span>
+                  <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span className="text-blue-600 font-bold text-sm">{tip.icon.charAt(0)}</span>
+                  </div>
                   <div>
                     <h3 className="font-bold text-gray-900 flex items-center space-x-2">
                       <span>{tip.title}</span>
@@ -327,7 +333,7 @@ const Transport = () => {
         {/* Emergency Contacts */}
         <div className="mt-12 bg-red-50 border border-red-200 rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-red-900 mb-4 flex items-center space-x-2">
-            <span>Emergency Transport Information 🦁</span>
+            <span>Emergency Transport Information</span>
             <Crown className="w-5 h-5 text-red-600" />
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
