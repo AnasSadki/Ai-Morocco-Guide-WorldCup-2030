@@ -125,7 +125,7 @@ const Transport = () => {
       <section 
         className="relative py-20 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/🔮 10 Mind-Blowing AI Workspace Secrets (2024 Guide).jpeg')`
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/téléchargement (2) copy copy.jpg')`
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
