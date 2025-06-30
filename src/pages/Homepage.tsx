@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MessageCircle, Calendar, UtensilsCrossed, Car, Globe, Trophy, Star, Users, MapPin, Crown } from 'lucide-react';
+import { ArrowRight, MessageCircle, Calendar, UtensilsCrossed, Car, Globe, Trophy, Star, Users, MapPin } from 'lucide-react';
 
 const Homepage = () => {
   const features = [
@@ -23,7 +23,7 @@ const Homepage = () => {
       color: 'from-red-500 to-red-600'
     },
     {
-      icon: Crown,
+      icon: Trophy,
       title: 'World Cup Ready',
       description: 'Specialized for World Cup 2030 travelers',
       color: 'from-yellow-500 to-orange-600'
@@ -73,21 +73,10 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="flex justify-center items-center space-x-4 mb-6">
-                <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center relative">
-                  <div 
-                    className="w-16 h-16 bg-cover bg-center rounded-full border-4 border-white/30"
-                    style={{ backgroundImage: `url('/download (1).jpeg')` }}
-                  ></div>
-                  <Crown className="w-6 h-6 text-yellow-400 absolute -top-2 -right-2" />
-                </div>
-                <div className="text-4xl">🇲🇦 ⚽ 🇵🇹 🇪🇸</div>
-              </div>
-              
               <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
                 Welcome to
                 <span className="block bg-gradient-to-r from-yellow-400 via-red-500 to-green-500 bg-clip-text text-transparent">
-                  Morocco AI Guide 🦁
+                  Morocco AI Guide
                 </span>
               </h1>
               
@@ -106,7 +95,7 @@ const Homepage = () => {
                 className="bg-gradient-to-r from-red-600 to-green-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2"
               >
                 <MessageCircle className="w-5 h-5" />
-                <span>Start Chatting with AI 🦁</span>
+                <span>Start Chatting with AI</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
               
@@ -127,7 +116,7 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Morocco AI Guide? 🦁
+              Why Choose Morocco AI Guide?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Built with cutting-edge AI technology to make your World Cup experience seamless and memorable
@@ -156,7 +145,7 @@ const Homepage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Start Your Journey 🦁
+              Start Your Journey
             </h2>
             <p className="text-xl text-gray-600">
               Choose a category or ask Morocco AI anything
@@ -188,7 +177,7 @@ const Homepage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
-            Ask Morocco AI Anything 🦁
+            Ask Morocco AI Anything
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -216,7 +205,7 @@ const Homepage = () => {
               className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-600 to-green-600 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <MessageCircle className="w-5 h-5" />
-              <span>Start Chatting Now 🦁</span>
+              <span>Start Chatting Now</span>
               <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
