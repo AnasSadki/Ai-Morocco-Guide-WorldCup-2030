@@ -15,7 +15,6 @@ const FoodCulture = () => {
     '/files_5636413-1751293312740-بسطيلة الدجاج المغربية.jpg',
     '/files_5636413-1751293328742-Moroccan couscous.jpg',
     '/files_5636413-1751293349835-81 Traditional Christmas Foods To Feast On.jpg',
-    '/files_5636413-1751294415939-Moroccan baghrir 🇲🇦.jpg',
     '/files_5636413-1751294418975-Moroccan tea.jpg',
     '/files_5636413-1751294421930-Abundance.jpg',
     '/files_5636413-1751294424918-téléchargement.jpg'
