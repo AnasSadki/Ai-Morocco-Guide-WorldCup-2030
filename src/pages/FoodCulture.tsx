@@ -22,12 +22,19 @@ const FoodCulture = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((image, index) => (
-            <div key={index} className="aspect-square overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <img
-                src={image}
-                alt={`Moroccan cuisine ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
+            <div key={index} className="overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src={image}
+                  alt={`Moroccan cuisine ${index + 1}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              {index === 0 && (
+                <div className="p-4 bg-white">
+                  <h3 className="text-lg font-semibold text-gray-900 text-center">Harira</h3>
+                </div>
+              )}
             </div>
           ))}
         </div>
